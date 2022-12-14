@@ -1,0 +1,109 @@
+1. What are Data Types?
+Ans. A data type is a set of values and a set of operations defined on data. An implementation of a data type is an expression of data and operations in terms of a specific programming language such as Java, C ++, or Python.
+
+2. What does immutable mean and what three types of Python core data types are considered immutable?
+Ans. An immutable data type is a type of object which cannot be modified after its creation. Numbers, strings, and tuples in Python fall into this category. Although you cannot modify an immutable object in place, you can always create a new one by running an expression.
+
+3. What would be the result of executing the following code : print(True*2) 
+Ans. Since True considers as 1 and it is not in string format, 1*2=2. The answer is 2.
+
+4. Which of the following statements, when executed, raises the TypeError?
+   dict(range(9))
+   set(range(9))
+   list(range(9))
+   tuple(range(9))
+Ans. dict(range(9)) statement gives Type Error as dictionary contains key & value pairs.
+
+5. Which function overloads the >> operator?
+Ans. rshift() overloads the >> operator
+
+6. Explain the ternary operator in Python.
+Ans. Syntax : [on true] if [expression] else [on false]. If the expression is True, the statement under [on true] is executed. Else, that under [on false] is executed.
+
+7. Explain the //, %, and ** operators in Python.
+Ans. The // operator performs floor division. It will return the integer part of the result on division.
+     Example : 7//2 returns 3
+     ** performs exponentiation. a**b returns the value of a raised to the power b.
+     Example : 2**10 returns 1024
+     % is for modulus. This gives us the value left after the highest achievable division.
+     Example : 3.5%1.5 returns 0.5
+
+8. What are the 7 operators in Python?
+Ans. Arithmetic operators, Assignment operators, Comparison operators, Logical operators, Identity operators, Membership operators, Bitwise operators.
+
+9. What is pass in Python?
+Ans. Pass means, no-operation Python statement, or in other words it is a place holder in compound statement, where there should be a blank left and nothing has to be written there.
+
+10. What Does The Continue and Break Do In Python? 
+Ans. The continue is a jump statement in Python which moves the control to execute the next iteration in a loop leaving all the remaining instructions in the block unexecuted.
+     The continue statement is applicable for both the “while” and “for” loops.
+     Python provides a break statement to exit from a loop. Whenever the break hits in the code, the control of the program immediately exits from the body of the loop.
+     The break statement in a nested loop causes the control to exit from the inner iterative block.
+
+11. In a Python program, a control structure is?
+Ans. Directs the order of execution of the statements in the program
+
+12. What signifies the end of a statement block or suite in Python?
+Ans. A line that is indented less than the previous line
+
+13. What is the value of this expression:
+Ans. 'a' + 'x' if '123'.isdigit() else 'y' + 'b'
+      Output returns 'ax'
+
+14. Which loop in Python is a counter-controlled loop?
+Ans. for loop is a counter-controlled loop in python
+
+15. What would be the result of executing the following code?
+    sum = 0
+    for i in range(5, 0, -2):
+      sum += i > sum
+    print(sum)
+Ans. 0
+     1
+     2
+     3 
+
+16. What is the difference between a for loop and a while loop?
+Ans. A for loop is typically used when you know exactly how many times the loop needs to be repeated. A while loop is typically used when you don't know how many times the loop needs to be repeated.
+     A while loop repeats as long as its condition is true. For example, if a while loop says "while x == 5", then the line will execute as long as x equals five.
+     
+     
+17. What is Function?
+Ans. Function is a block of code that is used to perform a specific task or a logic.
+     Benefit of Functions --> Code Reuseability
+
+18. What are types of Functions in Python?
+Ans. 1. Userdefined Functions --> functions that are developed by the developer as per business requirements.
+        Example: add() and subtract()
+     2. Builtin Functions --> Functions that are already defined by the python virtual machine we need not to define those function we will simply call those functions
+        and use that function.
+        Example:
+        id(), type(), print(), len(), max(), min()
+
+19. What are types of Actual Parameters?
+Ans. 1.Positional Argument : these are the arguments passed to the function with the correct positional order
+     2.Keyword Argument : while calling the function you are going to give the keys for each argument
+     3.Default Argument : sometimes we need to provide few default values for our arguments. While declaring a function if we are deefining anything then it is treated defult values
+     4.Variable length argument : if we don't know how many argument we need to pass while calling a function then we should use variable length argument
+
+20. What are the types of Variables in Functions and scopes of variables?
+Ans. Global Variable : are those variables that are declared and intilized outside any function.
+     Example : a=10            #Global Variable
+               def check():
+                  print(a) 
+               return ""
+               print(check())   # prints 10
+     Local Variable : are those variable that are declared and initialized inside the function.
+     Example : def check():
+                  a=10 #Local Variable
+                  b=20 #local Variable
+                  print(a)
+                  print(b)
+               return ""
+               print(check())
+      Output : 10
+               20
+
+      Scopes of the variables:
+      a. Global variable --> global variables can be accessed any where in the program (either outside or inside)
+      b. Local variable can only be accessed within the function.You cannot access local variable outside
